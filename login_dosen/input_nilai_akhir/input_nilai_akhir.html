@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Nilai Akhir</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="../../index.html" class="home-button">Home</a>
+    <div class="container">
+      <h2>Nilai Akhir Desain Web</h2>
+      <table id="nilaiTable">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Absen (10%)</th>
+            <th>Tugas (20%)</th>
+            <th>UTS (30%)</th>
+            <th>UAS (40%)</th>
+            <th>Nilai Akhir</th>
+            <th>Nilai Huruf</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button onclick="addRow()">Tambah Baris</button>
+      <button onclick="calculate()">Hitung</button>
+      <button onclick="resetTable()">Reset</button>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

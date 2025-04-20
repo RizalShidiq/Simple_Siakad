@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Data Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="../../index.html" class="home-button">Home</a>
+    <div class="container">
+      <h2>Input Data Mahasiswa</h2>
+      <form id="mahasiswaForm">
+        <input type="text" id="nim" placeholder="NIM" required />
+        <input type="text" id="nama" placeholder="Nama" required />
+        <input type="text" id="jurusan" placeholder="Jurusan" required />
+
+        <div class="gender-container">
+          <label>Jenis Kelamin:</label>
+          <div>
+            <input
+              type="radio"
+              id="pria"
+              name="jenis_kelamin"
+              value="Pria"
+              required
+            />
+            <label for="pria">Pria</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="wanita"
+              name="jenis_kelamin"
+              value="Wanita"
+              required
+            />
+            <label for="wanita">Wanita</label>
+          </div>
+        </div>
+
+        <label>Agama:</label>
+        <select id="agama" required>
+          <option value="Islam">Islam</option>
+          <option value="Kristen">Kristen</option>
+          <option value="Hindu">Hindu</option>
+          <option value="Budha">Budha</option>
+        </select>
+
+        <label>Hobi:</label>
+        <div class="hobby-container">
+          <input type="checkbox" id="main_game" name="hobi" value="Main game" />
+          <label for="main_game">Main game</label>
+          <input type="checkbox" id="nonton" name="hobi" value="Nonton" />
+          <label for="nonton">Nonton</label>
+          <input
+            type="checkbox"
+            id="makan_bakso"
+            name="hobi"
+            value="Makan Bakso"
+          />
+          <label for="makan_bakso">Makan Bakso</label>
+        </div>
+
+        <div class="button-container">
+          <button type="submit">Send</button>
+          <button type="reset" id="resetButton">Reset</button>
+        </div>
+      </form>
+      <div id="output"></div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
